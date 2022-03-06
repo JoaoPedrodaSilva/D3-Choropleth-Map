@@ -6,8 +6,8 @@ const colors = ['#a1d0c1', '#8ac5b1', '#72b9a2', '#5bad92', '#43a283', '#2c9673'
 const tooltip = document.querySelector('#tooltip')
 
 const generateCanvas = () => {
-  const w = 950
-  const h = 700
+  const w = 945
+  const h = 650
   canvas.attr('width', w)
         .attr('height', h)     
 }
@@ -49,8 +49,8 @@ const generatePathes = () => {
           tooltip.innerHTML = (`${matchEducationalObject[0].area_name},
                                 ${matchEducationalObject[0].state}: 
                                 ${matchEducationalObject[0].bachelorsOrHigher}%`)
-          tooltip.style.left = e.pageX + 10 + 'px'
-          tooltip.style.top = e.pageY - 28 + 'px'
+          tooltip.style.left = e.pageX - 100 + 'px'
+          tooltip.style.top = e.pageY - 70 + 'px'
         })
         .on('mouseout', () => tooltip.classList.remove('visible'))
 }

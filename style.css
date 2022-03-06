@@ -1,24 +1,30 @@
-body {background-color: darkgrey;}
+body {background-color: white}
   
-  #container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #legend {margin: -25px;}
-  
-  #tooltip {
-    position: absolute;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    border-radius: 5%;
-  }
-  
-  #tooltip.visible {display: flex;}
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+path:hover {
+  stroke: black;
+}
+
+#legend {margin: -25px}
+
+#title {margin: 0}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 5%;
+}
+
+#tooltip.visible {display: flex;}
